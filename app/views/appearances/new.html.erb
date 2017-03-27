@@ -2,8 +2,12 @@
 
 <%= form_for @appearance do |f| %>
   <%= f.label :rating %>
-  <%= f.number_field :rating, in: (1..5) %>
-  <%= f.collection_select :episode_id, Episode.all, :id, :date %>
-  <%= f.collection_select :guest_id, Guest.all, :id, :name %>
+  <%= f.number_field :rating, in: (1..5) %> </br></br>
+  <%= f.label "Date" %>
+  <%= f.collection_select :episode_id, Episode.all, :id, :date %></br></br>
+  <%= f.label "Guest name" %>
+  <%= f.collection_select :guest_id, Guest.all, :id, :name %></br></br>
+  <%= f.label "Producer name" %>
+  <%= f.collection_select :user_id, User.all, :id, :username %></br></br>
   <%= f.submit %>
 <% end %>

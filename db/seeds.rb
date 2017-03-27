@@ -26,3 +26,4 @@ date = Date.parse('2015-09-08')
 end
 
 User.create(username: 'stephencolbert', password: 'bears')
+User.create(username: 'Vicky', password: 'testing!')

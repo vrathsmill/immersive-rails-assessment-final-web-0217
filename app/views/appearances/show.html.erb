@@ -1,0 +1,9 @@
+<h1>Appearance Info!</h1>
+
+<p> <%= @appearance.guest.name %> was on the show on <%=@appearance.episode.date %>. </p>
+
+<p><%= @appearance.user.username%> created this DOPE appearance. </p>
+
+<p>They got a rating of <%=@appearance.rating%>.</p>
+
+<%= link_to 'Edit rating', edit_appearance_path %>
